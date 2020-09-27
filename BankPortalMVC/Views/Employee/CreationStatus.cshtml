@@ -1,0 +1,83 @@
+﻿@model BankPortalMVC.Models.CustomerCreationStatus
+@{
+    ViewData["Title"] = "CreationStatus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        #hd {
+            padding-left: 50px;
+        }
+
+        body {
+            text-align: center
+        }
+
+        table {
+            margin: 10%;
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <span class="navbar-brand">Customer Creation Status</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-action="Index"><i class='fas fa-home' style='font-size:48px;color:red'></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-dark" onclick="window.print()"><i class='fas fa-print' style='font-size:48px;color:red'></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--<h1>Customer Creation Status</h1>-->
+    <table border="1">
+        <tr>
+            <td>
+                Customer ID
+            </td>
+            <td>
+                @Model.CustomerId
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Customer Current Account ID
+            </td>
+            <td>
+                @Model.CurrentAccountId
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Customer Savings Account ID
+            </td>
+            <td>
+                @Model.SavingsAccountId
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Customer Account Creation Status
+            </td>
+            <td>
+                @Model.Message
+            </td>
+        </tr>
+    </table>
+</body>

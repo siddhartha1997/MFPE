@@ -1,0 +1,107 @@
+﻿@model BankPortalMVC.Models.transactionmsg
+@{
+    ViewData["Title"] = "TransferStatus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        .body {
+            text-align: center;
+        }
+
+        #tb {
+            text-align: center;
+        }
+
+        #hd {
+            text-align: right;
+        }
+
+        #unl {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #list {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #ab {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        #abc {
+            float: right;
+        }
+    </style>
+</head>
+<!--<h1>Transfer Status</h1>
+<div id="hd"><a asp-action="Index">Go to Home Page</a></div>-->
+<body>
+    <header>
+        <ul id="unl">
+            <li id="list"><span id="ab" class="active">TransferStatus</span></li>
+            <li id="list"><span id="abcd" onclick="window.print()"><i class='fas fa-print' style='font-size:48px;color:red'></i></span></li>
+            <li id="list"><a asp-action="Index"><i class='fas fa-home' style='font-size:48px;color:red'></i></a></li>
+        </ul>
+    </header>
+    <table border="1">
+        <tr>
+            <th>
+                Particulars
+            </th>
+            <th>
+                Details
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Sender Account Balance
+            </td>
+            <td>
+                @Model.sbal
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Receiver Account Balance
+            </td>
+            <td>
+                @Model.rbal
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Transfer Status
+            </td>
+            <td>
+                @Model.transferStatus
+            </td>
+        </tr>
+    </table>
+</body>

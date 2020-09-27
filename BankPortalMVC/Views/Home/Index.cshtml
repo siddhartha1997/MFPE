@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <style>
+        #clock {
+            font-size: 20px;
+            width: 200px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-top:25%;
+            margin-left:35%;
+            background-color:#4CAF50;
+            color:white;
+        }
+        #btn 
+        {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius:20px;
+            margin-top:80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Bank ABC</h1>
+        <!--<h6>Please Login to continue</h6>
+        <!--<p><a asp-controller="User" asp-action="Login">Click here to login</a></p>-->
+        <input type='button' id="btn" value='Login' onclick='window.location = "@Url.Action("Login", "User")";' />
+        <div id="clock">8:10:45</div>
+
+        <script>
+            setInterval(showTime, 1000);
+            function showTime() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "AM";
+
+                if (hour > 12) {
+                    hour -= 12;
+                    am_pm = "PM";
+                }
+                if (hour == 0) {
+                    hr = 12;
+                    am_pm = "AM";
+                }
+
+                hour = hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+
+                let currentTime = hour + ":"
+                    + min + ":" + sec + am_pm;
+
+                document.getElementById("clock")
+                    .innerHTML = currentTime;
+            }
+
+            showTime();
+        </script>
+    </div>
+</body>

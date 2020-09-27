@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        #btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<h1>Error occured while proccessing your request </h1>
+<br />
+Your login info not correct or Micro service might not be working
+<br />
+click below
+<div>
+    <a asp-controller="User" asp-action="Login" id="btn" class="btn btn-outline-primary">Login Again</a>
+</div>

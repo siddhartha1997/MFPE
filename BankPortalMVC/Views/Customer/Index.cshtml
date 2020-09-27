@@ -1,0 +1,133 @@
+﻿@model IEnumerable<BankPortalMVC.Models.AccountMsg>
+
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        #lo {
+            float: right;
+        }
+        #btn {
+            color: blueviolet;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+        #unl {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        #lst {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) 
+        {
+            background-color: #111;
+        }
+        .active 
+        {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul id="unl">
+            <li id="lst"><a class="active" asp-action="Index">Home</a></li>
+            <li id="lst"><a asp-action="Deposit">Deposit Money</a></li>
+            <li id="lst"><a asp-action="Withdraw">Withdraw Money</a></li>
+            <li id="lst"><a asp-action="Transfer">Transfer Money</a></li>
+            <li id="lst"><a asp-action="AccountStatement">See Account Statements</a></li>
+            <li id="lst"><a asp-controller="User" asp-action="Logout"><i class='fas fa-power-off' style='font-size:20px;color:red'></i></a></li>
+        </ul>
+    </header>
+    <h1>Customer Id::@TokenInfo.UserID<span id="lo">Current Time<span id="clock">8:10:45</span></span></h1>
+    <!--<p>
+        <table class="table">
+        <tr>
+            <th><a asp-action="Deposit"><div id="btn">Deposit</div></a></th>
+            <th><a asp-action="Withdraw"><div id="btn">Withdraw</div></a></th>
+            <th><a asp-action="Transfer"><div id="btn">Transfer</div></a></th>
+        </tr>
+    </table>
+    </p>-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Account ID
+                </th>
+                <th>
+                    Account Type
+                </th>
+                <th>
+                    Balance(Rs.)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccBal)
+                        .00
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+
+        showTime();
+    </script>
+</body>
