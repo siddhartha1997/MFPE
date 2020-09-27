@@ -1,0 +1,209 @@
+INFO  10:46:32 Application started. Press Ctrl+C to shut down.
+INFO  10:46:32 Application started. Press Ctrl+C to shut down.
+INFO  10:46:32 Hosting environment: Development
+INFO  10:46:32 Hosting environment: Development
+INFO  10:46:32 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  10:46:32 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  10:46:58 Authentication initiated
+INFO  10:59:29 Application started. Press Ctrl+C to shut down.
+INFO  10:59:29 Application started. Press Ctrl+C to shut down.
+INFO  10:59:29 Hosting environment: Development
+INFO  10:59:29 Hosting environment: Development
+INFO  10:59:29 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  10:59:29 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+ERROR 10:59:38 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AuthenticateMicroservice.Controllers.TokenController.AuthenticateUser (AuthenticateMicroservice). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 10:59:38 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AuthenticateMicroservice.Controllers.TokenController.AuthenticateUser (AuthenticateMicroservice). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:00:13 Application started. Press Ctrl+C to shut down.
+INFO  11:00:13 Application started. Press Ctrl+C to shut down.
+INFO  11:00:14 Hosting environment: Development
+INFO  11:00:14 Hosting environment: Development
+INFO  11:00:14 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:00:14 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+ERROR 11:00:15 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AuthenticateMicroservice.Controllers.TokenController.AuthenticateUser (AuthenticateMicroservice). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 11:00:15 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AuthenticateMicroservice.Controllers.TokenController.AuthenticateUser (AuthenticateMicroservice). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:01:06 Application started. Press Ctrl+C to shut down.
+INFO  11:01:06 Application started. Press Ctrl+C to shut down.
+INFO  11:01:06 Hosting environment: Development
+INFO  11:01:06 Hosting environment: Development
+INFO  11:01:06 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:01:06 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:12:50 Application started. Press Ctrl+C to shut down.
+INFO  11:12:50 Application started. Press Ctrl+C to shut down.
+INFO  11:12:50 Hosting environment: Development
+INFO  11:12:50 Hosting environment: Development
+INFO  11:12:50 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:12:50 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+ERROR 11:13:09 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AuthenticateMicroservice.Repository.ITokenRep' while attempting to activate 'AuthenticateMicroservice.Controllers.TokenController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 11:13:09 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'AuthenticateMicroservice.Repository.ITokenRep' while attempting to activate 'AuthenticateMicroservice.Controllers.TokenController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  11:14:11 Application started. Press Ctrl+C to shut down.
+INFO  11:14:11 Application started. Press Ctrl+C to shut down.
+INFO  11:14:11 Hosting environment: Development
+INFO  11:14:11 Hosting environment: Development
+INFO  11:14:11 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:14:11 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:14:33 Authentication initiated
+INFO  11:28:15 Application started. Press Ctrl+C to shut down.
+INFO  11:28:15 Application started. Press Ctrl+C to shut down.
+INFO  11:28:15 Hosting environment: Development
+INFO  11:28:15 Hosting environment: Development
+INFO  11:28:15 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:28:15 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:28:55 Authentication initiated
+INFO  12:01:29 Application started. Press Ctrl+C to shut down.
+INFO  12:01:29 Application started. Press Ctrl+C to shut down.
+INFO  12:01:29 Hosting environment: Development
+INFO  12:01:29 Hosting environment: Development
+INFO  12:01:29 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  12:01:29 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  12:02:52 Authentication initiated
+INFO  12:04:18 Authentication initiated
+INFO  08:51:07 Application started. Press Ctrl+C to shut down.
+INFO  08:51:07 Application started. Press Ctrl+C to shut down.
+INFO  08:51:07 Hosting environment: Development
+INFO  08:51:07 Hosting environment: Development
+INFO  08:51:07 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:51:07 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:53:35 Application started. Press Ctrl+C to shut down.
+INFO  08:53:35 Application started. Press Ctrl+C to shut down.
+INFO  08:53:35 Hosting environment: Development
+INFO  08:53:35 Hosting environment: Development
+INFO  08:53:35 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:53:35 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:54:24 Authentication initiated
+INFO  08:59:10 Application started. Press Ctrl+C to shut down.
+INFO  08:59:10 Application started. Press Ctrl+C to shut down.
+INFO  08:59:10 Hosting environment: Development
+INFO  08:59:10 Hosting environment: Development
+INFO  08:59:10 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:59:10 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  08:59:39 Authentication initiated
+INFO  09:55:24 Application started. Press Ctrl+C to shut down.
+INFO  09:55:24 Application started. Press Ctrl+C to shut down.
+INFO  09:55:24 Hosting environment: Development
+INFO  09:55:24 Hosting environment: Development
+INFO  09:55:24 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  09:55:24 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  09:55:57 Authentication initiated
+INFO  09:57:40 Authentication initiated
+INFO  09:59:12 Authentication initiated
+INFO  11:20:20 Application started. Press Ctrl+C to shut down.
+INFO  11:20:20 Application started. Press Ctrl+C to shut down.
+INFO  11:20:20 Hosting environment: Development
+INFO  11:20:20 Hosting environment: Development
+INFO  11:20:20 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:20:20 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  11:21:57 Authentication initiated
+INFO  11:25:50 Authentication initiated
+INFO  12:42:51 Application started. Press Ctrl+C to shut down.
+INFO  12:42:51 Application started. Press Ctrl+C to shut down.
+INFO  12:42:51 Hosting environment: Development
+INFO  12:42:51 Hosting environment: Development
+INFO  12:42:51 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  12:42:51 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  12:43:38 Authentication initiated
+INFO  12:44:27 Authentication initiated
+INFO  12:44:47 Authentication initiated
+INFO  01:09:46 Application started. Press Ctrl+C to shut down.
+INFO  01:09:46 Application started. Press Ctrl+C to shut down.
+INFO  01:09:46 Hosting environment: Development
+INFO  01:09:46 Hosting environment: Development
+INFO  01:09:46 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  01:09:46 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  01:10:30 Authentication initiated
+INFO  02:42:59 Application started. Press Ctrl+C to shut down.
+INFO  02:42:59 Application started. Press Ctrl+C to shut down.
+INFO  02:42:59 Hosting environment: Development
+INFO  02:42:59 Hosting environment: Development
+INFO  02:42:59 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  02:42:59 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  02:44:00 Authentication initiated
+INFO  02:46:18 Authentication initiated
+INFO  04:53:35 Application started. Press Ctrl+C to shut down.
+INFO  04:53:35 Application started. Press Ctrl+C to shut down.
+INFO  04:53:35 Hosting environment: Development
+INFO  04:53:35 Hosting environment: Development
+INFO  04:53:35 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  04:53:35 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  04:54:04 Authentication initiated
+INFO  04:55:40 Authentication initiated
+INFO  04:58:11 Authentication initiated
+INFO  04:59:39 Authentication initiated
+INFO  05:01:28 Authentication initiated
+INFO  05:03:20 Application started. Press Ctrl+C to shut down.
+INFO  05:03:20 Application started. Press Ctrl+C to shut down.
+INFO  05:03:20 Hosting environment: Development
+INFO  05:03:20 Hosting environment: Development
+INFO  05:03:20 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  05:03:20 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  05:03:52 Authentication initiated
+INFO  05:08:44 Authentication initiated
+INFO  05:10:51 Authentication initiated
+INFO  05:12:15 Authentication initiated
+INFO  05:16:02 Authentication initiated
+INFO  05:18:33 Authentication initiated
+INFO  05:19:42 Authentication initiated
+INFO  05:51:08 Application started. Press Ctrl+C to shut down.
+INFO  05:51:08 Application started. Press Ctrl+C to shut down.
+INFO  05:51:08 Hosting environment: Development
+INFO  05:51:08 Hosting environment: Development
+INFO  05:51:08 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  05:51:08 Content root path: E:\BankRetailSystem\Updated\AuthenticateMicroservice
+INFO  05:52:41 Authentication initiated
+INFO  05:54:43 Authentication initiated
+INFO  05:59:02 Authentication initiated
