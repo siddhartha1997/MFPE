@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthenticateMicroservice.Repository
 {
-    public interface ITokenRep
+    public interface ITokenRepository
     {
         public Authenticate AuthenticateUser(Authenticate login);
         public string GenerateJSONWebToken(Authenticate userInfo);

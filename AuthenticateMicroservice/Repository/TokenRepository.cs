@@ -10,31 +10,30 @@ using System.Threading.Tasks;
 
 namespace AuthenticateMicroservice.Repository
 {
-    public class TokenRep : ITokenRep
+    public class TokenRepository : ITokenRepository
     {
         private IConfiguration _config;
-        public TokenRep(IConfiguration config)
+        public TokenRepository(IConfiguration config)
         {
             _config = config;
         }
         public static List<Authenticate> clientList = new List<Authenticate>
         {
-            new Authenticate{UserID=1,Password="1234",Roles="Employee"},
-            new Authenticate{UserID=2,Password="12345",Roles="Customer"}
+            new Authenticate{userId=1,Password="1234",Roles="Employee"},
+            new Authenticate{userId=2,Password="12345",Roles="Customer"}
         };
         public Authenticate AuthenticateUser(Authenticate login)
         {
             Authenticate user = null;
             foreach (var v in clientList)
             {
-                if (v.UserID == login.UserID && v.Password == login.Password)
+                if (v.userId == login.userId && v.Password == login.Password)
                 {
-                    user = new Authenticate { UserID = login.UserID, Password = login.Password };
+                    user = new Authenticate { userId = login.userId, Password = login.Password };
                 }
             }
             return user;
         }
-
         public string GenerateJSONWebToken(Authenticate userInfo)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
@@ -45,7 +44,6 @@ namespace AuthenticateMicroservice.Repository
                 null,
                 expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: credentials);
-
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }

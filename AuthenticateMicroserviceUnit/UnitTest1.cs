@@ -20,8 +20,8 @@ namespace AuthenticateMicroserviceUnit
         public void IsTokenNotNullIsTokenNotNull_When_ValidUserCredentialsAreUsed()
         {
             Mock<IConfiguration> config = new Mock<IConfiguration>();
-            var TokenObj = new TokenRep(config.Object);
-            var Result = TokenObj.AuthenticateUser(new Authenticate { UserID = 1, Password = "1234", Roles = "Employee" });
+            var TokenObj = new TokenRepository(config.Object);
+            var Result = TokenObj.AuthenticateUser(new Authenticate { userId = 1, Password = "1234", Roles = "Employee" });
             Assert.IsNotNull(Result);
         }
 
@@ -29,8 +29,8 @@ namespace AuthenticateMicroserviceUnit
         public void IsTokenNull_When_InvalidUserCredentialsAreUsed()
         {
             Mock<IConfiguration> config = new Mock<IConfiguration>();
-            var TokenObj = new TokenRep(config.Object);
-            var Result = TokenObj.AuthenticateUser(new Authenticate() { UserID = 1, Password = "12345",Roles="Employee" });
+            var TokenObj = new TokenRepository(config.Object);
+            var Result = TokenObj.AuthenticateUser(new Authenticate() { userId = 1, Password = "12345",Roles="Employee" });
             Assert.IsNull(Result);
         }
     }

@@ -7,7 +7,7 @@ namespace AuthenticateMicroservice.Model
 {
     public class Authenticate
     {
-        public int UserID { get; set; }
+        public int userId { get; set; }
         public string Password { get; set; }
         public string Roles { get; set; }
     }

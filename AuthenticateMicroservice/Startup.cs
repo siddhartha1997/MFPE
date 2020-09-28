@@ -36,7 +36,7 @@ namespace AuthenticateMicroservice
             {
                 c.SwaggerDoc("v1.0", new OpenApiInfo { Title = "Authorization MicroService", Version = "1.0" });
             });
-            services.AddScoped<ITokenRep, TokenRep>();
+            services.AddScoped<ITokenRepository, TokenRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {

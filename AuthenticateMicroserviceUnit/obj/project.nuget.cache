@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i2yc6Rbg2AqZVw47QqwZ060h7P8zv6QSQVFFbxxeIibkv9FmHpRl8Mte/nBpwq+p7vtv9ZNHvHkMJnYqAxXjAQ==",
+  "dgSpecHash": "1c1IpgqPMCacQ0NsXS1zFsh0y52s+/irTa2CNBqFd5mEWd8D5LfgYBM2FmIB2EyHmIFEu/JoOvCJ1yZuZMlDvA==",
   "success": true,
-  "projectFilePath": "E:\\BankRetailSystem\\Updated\\AuthenticateMicroserviceUnit\\AuthenticateMicroserviceUnit.csproj",
+  "projectFilePath": "E:\\Updated\\AuthenticateMicroservice-Git\\AuthenticateMicroserviceUnit\\AuthenticateServiceUnit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
