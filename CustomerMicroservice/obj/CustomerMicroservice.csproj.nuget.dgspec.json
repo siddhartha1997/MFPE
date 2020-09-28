@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj": {}
+    "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerMicroservice.csproj": {}
   },
   "projects": {
-    "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj": {
+    "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj",
+        "projectUniqueName": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerMicroservice.csproj",
         "projectName": "CustomerMicroservice",
-        "projectPath": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj",
+        "projectPath": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerMicroservice.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\obj\\",
+        "outputPath": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

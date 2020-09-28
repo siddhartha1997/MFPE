@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v8re0RM1ysB/Pp994HY3UEpAWEAEFX/rpZ6sqiQlK1aWPJ7xW4KOKCNEYaXrHnUrhTdL1zNP2hcTQSfYTZaz1g==",
+  "dgSpecHash": "kdN9rAY8A9C6oAPW8dKm9dfsVDXN7kD1oEXMxBQpoVNSPdKzhY6PuuTCopekH4zNviwPFti6Vrt219an6qJ82A==",
   "success": true,
-  "projectFilePath": "E:\\BankRetailSystem\\Updated\\BankPortalMVC\\BankPortalMVC.csproj",
+  "projectFilePath": "E:\\Updated\\AuthenticateMicroservice-Git\\BankPortalMVC\\BankPortalMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

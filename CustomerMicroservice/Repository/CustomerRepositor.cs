@@ -10,44 +10,43 @@ using System.Threading.Tasks;
 
 namespace CustomerMicroservice.Repository
 {
-    public class CustomerRep : ICustomerRep
+    public class CustomerRepositor : ICustomerRepository
     {
-        public static List<Customer> customers = new List<Customer>
+        public static List<customerDetails> customers = new List<customerDetails>
         {
-            new Customer{CustId = 2,Name="SB",Address="Dumdum",DOB="05-09-1997",PanNo="CGLBP002"}
+            new customerDetails{customerId = 2,name="SB",address="Dumdum",dateOfBirth="05-09-1997",panNumber="CGLBP002"}
         };
         //int CustId = 1;
         Uri baseAddress = new Uri("https://localhost:44379/api/Account");
         HttpClient client;
-        public CustomerRep()
+        public CustomerRepositor()
         {
             client = new HttpClient();
             client.BaseAddress = baseAddress;
         }
-        public CustomerCreationStatus createCustomer(Customer customer)
+        public customerCreationStatus createCustomer(customerDetails customer)
         {
             customers.Add(customer);
-            string data = JsonConvert.SerializeObject(customer.CustId);
+            string data = JsonConvert.SerializeObject(customer.customerId);
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             HttpResponseMessage response = client.PostAsync(client.BaseAddress + "/createAccount/", content).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data1 = response.Content.ReadAsStringAsync().Result;
-                customeraccount ob4 = JsonConvert.DeserializeObject<customeraccount>(data1);
-                var ob = new CustomerCreationStatus();
-                ob.CustomerId = customer.CustId;
-                ob.Message = "Success. Current and Savings account also created";
-                ob.CurrentAccountId = ob4.CAId;
-                ob.SavingsAccountId = ob4.SAId;
-                //CustId = CustId + 2;
+                customerAccountDetails ob4 = JsonConvert.DeserializeObject<customerAccountDetails>(data1);
+                var ob = new customerCreationStatus();
+                ob.customerId = customer.customerId;
+                ob.message = "Success. Current and Savings account also created";
+                ob.currentAccountId = ob4.currentAccountId;
+                ob.savingsAccountId = ob4.savingAccountId;
                 return ob;
             }
             return null;
         }
 
-        public Customer getCustomerDetails(int CustId)
+        public customerDetails getCustomerDetails(int customerId)
         {
-            return customers.Where(c => c.CustId == CustId).FirstOrDefault();          
+            return customers.Where(c => c.customerId == customerId).FirstOrDefault();          
         }
     }
 }

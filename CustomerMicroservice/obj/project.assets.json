@@ -3190,11 +3190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj",
-      "projectName": "CustomerMicroservice",
-      "projectPath": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj",
+      "projectUniqueName": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerService.csproj",
+      "projectName": "CustomerService",
+      "projectPath": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerService.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\obj\\",
+      "outputPath": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

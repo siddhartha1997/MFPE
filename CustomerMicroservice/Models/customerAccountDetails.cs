@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace CustomerMicroservice.Models
 {
-    public class customerCreationStatus
+    public class customerAccountDetails
     {
-        public string message { get; set; }
         public int customerId { get; set; }
         public int currentAccountId { get; set; }
-        public int savingsAccountId { get; set; }
+        public int savingAccountId { get; set; }
     }
 }

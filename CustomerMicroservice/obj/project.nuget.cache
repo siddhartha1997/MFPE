@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8W29kI+O3A4G82pLVYOiV9cBWOXcr1UBFzlTSLNTVD1ByxluKKyea+T9aPYCS38c88+PiBWNo4Qu8Bd3a8myQ==",
+  "dgSpecHash": "4HJP79AZ8knRLUHF5ebl4FmouGTqiWxuU4Vtb1Ds6jzkv4Mmw5lNarVg7MlJkxd9HuN5rWazBfhmEFAOlXPKgg==",
   "success": true,
-  "projectFilePath": "E:\\BankRetailSystem\\Updated\\CustomerMicroservice\\CustomerMicroservice.csproj",
+  "projectFilePath": "E:\\Updated\\AuthenticateMicroservice-Git\\CustomerMicroservice\\CustomerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\log4net\\2.0.10\\log4net.2.0.10.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",

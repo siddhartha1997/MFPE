@@ -17,8 +17,8 @@ namespace CustomerMicroservice.Controllers
     public class CustomerController : ControllerBase
     {
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(CustomerController));
-        ICustomerRep db;
-        public CustomerController(ICustomerRep _db)
+        ICustomerRepository db;
+        public CustomerController(ICustomerRepository _db)
         {
             db = _db;
         }
@@ -43,7 +43,7 @@ namespace CustomerMicroservice.Controllers
         }
         [HttpPost]
         [Route("createCustomer")]
-        public IActionResult createCustomer([FromBody] Customer customer)
+        public IActionResult createCustomer([FromBody] customerDetails customer)
         {
             _log4net.Info("Creation of customer is initiated");
             try

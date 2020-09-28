@@ -6148,11 +6148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\BankRetailSystem\\Updated\\BankPortalMVC\\BankPortalMVC.csproj",
+      "projectUniqueName": "E:\\Updated\\AuthenticateMicroservice-Git\\BankPortalMVC\\BankPortalMVC.csproj",
       "projectName": "BankPortalMVC",
-      "projectPath": "E:\\BankRetailSystem\\Updated\\BankPortalMVC\\BankPortalMVC.csproj",
+      "projectPath": "E:\\Updated\\AuthenticateMicroservice-Git\\BankPortalMVC\\BankPortalMVC.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "E:\\BankRetailSystem\\Updated\\BankPortalMVC\\obj\\",
+      "outputPath": "E:\\Updated\\AuthenticateMicroservice-Git\\BankPortalMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

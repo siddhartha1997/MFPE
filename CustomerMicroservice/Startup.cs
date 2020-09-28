@@ -32,7 +32,7 @@ namespace CustomerMicroservice
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddScoped<ICustomerRep, CustomerRep>();
+            services.AddScoped<ICustomerRepository, CustomerRepositor>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
