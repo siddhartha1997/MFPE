@@ -1,0 +1,73 @@
+﻿@model IEnumerable<BankPortalMVC.Models.Statement>
+
+@{
+    ViewData["Title"] = "AccountStatementStatus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <h1>AccountStatementStatus</h1>
+    <span style="float:right">
+        <i class='fas fa-print' style='font-size:48px;color:red' onclick="window.print()"></i>
+        <a asp-action="Index"><i class='fas fa-home' style='font-size:48px;color:red'></i></a>
+    </span>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Narration)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.refno)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.valueDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.withdrawal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.deposit)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.closingBalance)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Narration)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.refno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.valueDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.withdrawal)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.deposit)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.closingBalance)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

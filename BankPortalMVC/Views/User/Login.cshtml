@@ -1,0 +1,82 @@
+﻿@model BankPortalMVC.Models.User
+
+@{
+    ViewData["Title"] = "Login";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <style>
+        #btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 20px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<h1>User Login</h1>
+<hr />
+@if (TokenInfo.StringToken != null)
+{
+    <h5>You need to logout --Token Expired</h5>
+    <br /><p>kindly click Logout and login again</p>
+    <a asp-action="Logout" class="btn btn-primary">Logout</a>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Auth" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="UserID" class="control-label">User ID</label>
+                    <input asp-for="UserID" class="form-control" />
+                    <span asp-validation-for="UserID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label">Password</label>
+                    <input type="password" asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Roles" class="control-label">Login As</label><br />
+                    <table>
+                        <tr>
+                            <td>
+                                Bank Employee
+                            </td>
+                            <td>
+                                <input type="radio" value="Employee" asp-for="Roles" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Customer
+                            </td>
+                            <td>
+                                <input type="radio" value="Customer" asp-for="Roles" />
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Bank Employee<input type="radio" value="Employee" asp-for="Roles" /><br />
+                    Customer<input type="radio" value="Customer" asp-for="Roles" /><br />
+                    <!--<input asp-for="Roles" class="form-control" />-->
+                    <span asp-validation-for="Roles" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="btn" value="Login" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

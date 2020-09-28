@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+        #hd 
+        {
+            padding-left:60px;
+        }
+        #tb
+        {
+            border-radius:20px;
+            text-align:center;
+            margin-left:10%;
+        }
+        body
+        {
+            text-align:center;
+        }
+        h1
+        {
+            text-align:left;
+        }
+    </style>
+</head>
+<h1>Employee ID::@TokenInfo.UserID<a asp-controller="User" asp-action="Logout"><span id="hd"><i class='fas fa-power-off' style='font-size:48px;color:red'></i></span></a></h1>
+<div id="clock">8:10:45</div>
+<br />
+<h4>Click any one of the link to perform the task</h4>
+<table id="tb" border="1">
+    <tr>
+        <th>
+            Task
+        </th>
+        <td>
+            Link
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Create a New Customer Account
+        </td>
+        <td>
+            <a asp-action="CreateCustomer">Create a new Customer Account</a><br />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Get a customer account details
+        </td>
+        <td>
+            <a asp-action="GetCustomerAccountDetails">Get a particular Customer Account Details</a><br />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Perform monthly Service Charge Applicable Account
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <th>
+                        <a asp-action="CurrentAccountChecking">Check for Current Account</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a asp-action="SavingsAccountChecking">Check for Savings Account</a>
+                    </th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<script>
+    setInterval(showTime, 1000);
+    function showTime() {
+        let time = new Date();
+        let hour = time.getHours();
+        let min = time.getMinutes();
+        let sec = time.getSeconds();
+        am_pm = "AM";
+
+        if (hour > 12) {
+            hour -= 12;
+            am_pm = "PM";
+        }
+        if (hour == 0) {
+            hr = 12;
+            am_pm = "AM";
+        }
+
+        hour = hour < 10 ? "0" + hour : hour;
+        min = min < 10 ? "0" + min : min;
+        sec = sec < 10 ? "0" + sec : sec;
+
+        let currentTime = hour + ":"
+            + min + ":" + sec + am_pm;
+
+        document.getElementById("clock")
+            .innerHTML = currentTime;
+    }
+
+    showTime();
+</script>
