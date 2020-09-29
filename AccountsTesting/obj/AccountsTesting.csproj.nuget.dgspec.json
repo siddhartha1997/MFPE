@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountsTesting\\AccountsTesting.csproj": {}
+    "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountsTesting\\AccountsTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\AccountMicroservice.csproj": {
+    "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\AccountMicroservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\AccountMicroservice.csproj",
+        "projectUniqueName": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\AccountMicroservice.csproj",
         "projectName": "AccountMicroservice",
-        "projectPath": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\AccountMicroservice.csproj",
-        "packagesPath": "C:\\Users\\Shruti Kumari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\obj\\",
+        "projectPath": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\AccountMicroservice.csproj",
+        "packagesPath": "C:\\Users\\Deva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shruti Kumari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Deva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountsTesting\\AccountsTesting.csproj": {
+    "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountsTesting\\AccountsTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountsTesting\\AccountsTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountsTesting\\AccountsTesting.csproj",
         "projectName": "AccountsTesting",
-        "projectPath": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountsTesting\\AccountsTesting.csproj",
-        "packagesPath": "C:\\Users\\Shruti Kumari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountsTesting\\obj\\",
+        "projectPath": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountsTesting\\AccountsTesting.csproj",
+        "packagesPath": "C:\\Users\\Deva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountsTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Shruti Kumari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Deva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +108,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\AccountMicroservice.csproj": {
-                "projectPath": "C:\\Users\\Shruti Kumari\\Desktop\\final\\Testing\\Updated\\AccountMicroservice\\AccountMicroservice.csproj"
+              "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\AccountMicroservice.csproj": {
+                "projectPath": "C:\\Users\\Deva\\Downloads\\Updated\\Updated\\AccountMicroservice\\AccountMicroservice.csproj"
               }
             }
           }
@@ -158,7 +158,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

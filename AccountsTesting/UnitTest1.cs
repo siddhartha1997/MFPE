@@ -29,7 +29,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void getCurrent()
+        public void getCurrent_ValidOutput_ReturnsOkResult()
         {
             var mock = new Mock<AccountRep>();
             AccountController a1 = new AccountController(mock.Object);
@@ -39,7 +39,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void NotgetCurrent()
+        public void getCurrent_InvalidorNullOutput_ReturnBadResult()
         {
             try
             {
@@ -56,7 +56,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void getsavings()
+        public void getsavings_ValidOutput_ReturnsOkResult()
         {
             var mock = new Mock<AccountRep>();
             AccountController a1 = new AccountController(mock.Object);
@@ -67,7 +67,7 @@ namespace AccountsTesting
 
 
         [Test]
-        public void Notgetsavings()
+        public void getsavings_InvalidorNullOutput_ReturnBadResult()
         {
             try
             {
@@ -84,7 +84,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void getcustomerAccountst()
+        public void getcustomerAccounts_ValidOutput_ReturnsOkResult()
         {
             int id = 1;
             var mock = new Mock<AccountRep>();
@@ -95,7 +95,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void notgetcustomerAccountst()
+        public void getcustomerAccounts_InvalidorNullOutput_ReturnBadResult()
         {
             try
             {
@@ -113,7 +113,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void createAccount()
+        public void createAccount_ValidInput_OkResult()
         {
             int id = 1;
             var mock = new Mock<AccountRep>();
@@ -124,7 +124,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void NotcreateAccount()
+        public void createAccount_InvalidorNullInput_BadRequest()
         {
             try
             {
@@ -144,7 +144,7 @@ namespace AccountsTesting
 
 
         [Test]
-        public void getAccounts()
+        public void getAccounts_ValidOutput_ReturnsOkResult()
         {
             try { 
             int id = 1;
@@ -162,7 +162,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void getCorrectAccount()
+        public void getCorrectAccount_ValidOutput_OkResult()
         {
 
             int id = 1;
@@ -177,7 +177,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void getCorrectAccountStatment()
+        public void getCorrectAccountStatment_ValidOutput_OkResult()
         {
             try { 
             int id = 1;
@@ -195,7 +195,7 @@ namespace AccountsTesting
 
         }
         [Test]
-        public void deposit()
+        public void deposit_CorrectAmount_ReturnsOKResult()
         {
             var mock = new Mock<IAccountRep>();
             mock.Setup(m => m.deposit(d1)).Returns(am);
@@ -206,7 +206,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void Notdeposit()
+        public void deposit_InCorrectAmount_ReturnsBadResult()
         {
             try
             {
@@ -224,7 +224,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void withdraw()
+        public void withdraw_CorrectAmount_ReturnsOKResult()
         {
             var mock = new Mock<IAccountRep>();
             mock.Setup(m => m.withdraw(d1)).Returns(am);
@@ -235,7 +235,7 @@ namespace AccountsTesting
         }
 
         [Test]
-        public void notwithdraw()
+        public void withdraw_InCorrectAmount_ReturnsBadResult()
         {
             try
             {
@@ -254,7 +254,7 @@ namespace AccountsTesting
 
         }
         [Test]
-        public void transfer()
+        public void transfer_CorrectAmount_ReturnsOKResult()
         {
             try
             {

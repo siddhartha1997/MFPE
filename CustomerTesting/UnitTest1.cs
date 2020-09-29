@@ -30,7 +30,7 @@ namespace CustomerTesting
         }
 
         [Test]
-        public void getcustomers()
+        public void getcustomers_ValidInputPassed_OkRequest()
         {
            // int id = 1;
             
@@ -42,7 +42,7 @@ namespace CustomerTesting
         }
 
         [Test]
-        public void NotGetcustomers()
+        public void GetCustomer_InvalidInputPassed_ReturnsBadRequest()
         {
             // int id = 1;
 
@@ -54,7 +54,7 @@ namespace CustomerTesting
         }
 
         [Test]
-        public void Getcustomers_notNull()
+        public void Getcustomers_ReturnsNotnullList()
         {
             // int id = 1;
 
@@ -68,7 +68,7 @@ namespace CustomerTesting
         
 
         [Test]
-        public void Createcustomers()
+        public void Createcustomers_ValidInputPassed_ReturnsOkResult()
         {
            
 
@@ -81,7 +81,7 @@ namespace CustomerTesting
         }
 
         [Test]
-        public void Doesnotcreatecustomers()
+        public void Createcustomers_InvalidInputPassed_ReturnsBadRequest()
         {
 
 

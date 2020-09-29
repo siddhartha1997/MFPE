@@ -19,7 +19,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void test_deposit()
+        public void deposit_CorrectAmount_ReturnsOKResult()
         {
             var mock = new Mock<TransactionRep>();
             TransactionController t1 = new TransactionController(mock.Object);
@@ -31,7 +31,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void testnotull_deposit()
+        public void deposit_AmountNotZero_ReturnsNotNullValue()
         {
             var mock = new Mock<TransactionRep>();
             TransactionController t1 = new TransactionController(mock.Object);
@@ -43,7 +43,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void test_withdraw()
+        public void withdraw_CorrectAmount_ReturnsOKResult()
         {
             try
             {
@@ -52,7 +52,7 @@ namespace TranasctionUnitTesting
                 TransactionController t1 = new TransactionController(mock.Object);
 
                 var data = t1.withdraw(d1);
-                var res = data as BadRequestResult;
+                var res = data as ObjectResult;
                 Assert.AreEqual(200, res.StatusCode);
             }
             catch(Exception e)
@@ -62,7 +62,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void test_Not_Null_withdraw()
+        public void withdraw_AmountNotZero_ReturnsNotNullValue()
         {
             dwacc d1 = new dwacc { AccountId = 1, Balance = 2000 };
             var mock = new Mock<TransactionRep>();
@@ -75,7 +75,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void testbad_withdraw()
+        public void withdraw_InsufficeintBalace_ReturnsBadRequest()
         {
             var mock = new Mock<TransactionRep>();
 
@@ -87,7 +87,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void test_transfer()
+        public void transfer_CorrectAmount_ReturnsOKResult()
         {
             var mock = new Mock<ITransactionRep>();
             mock.Setup(p => p.transfer(transfer)).Returns(tsm);
@@ -98,7 +98,7 @@ namespace TranasctionUnitTesting
         }
 
         [Test]
-        public void testbad_transfer()
+        public void transfer_InsufficeintBalace_ReturnsBadRequest()
         {
             var mock = new Mock<TransactionRep>();
             TransactionController t1 = new TransactionController(mock.Object);

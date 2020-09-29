@@ -32,7 +32,7 @@ namespace RulesTesting
         }
 
         [Test]
-        public void getServiceCharges()
+        public void getServiceCharges_BalanceIsLessthanMinimumBakance_ReturnsServiceCharges()
         {
             var mock = new Mock<IRulesRep>();
             mock.Setup(p => p.getServiceCharges()).Returns(s1);
@@ -43,7 +43,7 @@ namespace RulesTesting
         }
 
         [Test]
-        public void getNullServiceCharges()
+        public void getServiceCharges_BalanceIsMorethanMinimumBakance_NoServiceChargeapplicable()
         {
             try { 
             var mock = new Mock<IRulesRep>();
@@ -60,7 +60,7 @@ namespace RulesTesting
         }
 
         [Test]
-        public void evaluateCorrectMinBal_savings()
+        public void evaluateMinBalSavings_CorrectBalancePassed_ReturnsOkResult()
         {
             try
             {
@@ -77,7 +77,7 @@ namespace RulesTesting
             }
         }
         [Test]
-        public void evaluateInCorrectMinBal_savings()
+        public void evaluateMinBalSavings_IncorrectBalancePassed_ReturnsBadRequestResult()
         {
             try
             {
@@ -95,7 +95,7 @@ namespace RulesTesting
         }
 
         [Test]
-        public void evaluateCorrectMinBal_Current()
+        public void evaluateMinBalCurrent_CorrectBalancePassed_ReturnsOkResult()
         {
             try
             {
@@ -113,7 +113,7 @@ namespace RulesTesting
         }
 
         [Test]
-        public void evaluate_InCorrectMinBal_Current()
+        public void evaluateMinBalCurrent_IncorrectBalancePassed_ReturnsBadRequestResult()
         {
             try
             {
