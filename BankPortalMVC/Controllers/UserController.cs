@@ -12,7 +12,7 @@ namespace BankPortalMVC.Controllers
 {
     public class UserController : Controller
     {
-        Uri baseAddress = new Uri("https://localhost:44373/api");
+        Uri baseAddress = new Uri("http://20.193.144.46/api");
         HttpClient client;
         public UserController()
         {
