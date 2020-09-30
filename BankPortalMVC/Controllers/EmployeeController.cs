@@ -33,7 +33,7 @@ namespace BankPortalMVC.Controllers
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             string data = JsonConvert.SerializeObject(customer);
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = client.PostAsync("https://localhost:44377/api/Customer/createCustomer", content).Result;
+            HttpResponseMessage response = client.PostAsync("http://20.193.136.74/api/Customer/createCustomer", content).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data1 = response.Content.ReadAsStringAsync().Result;
@@ -56,7 +56,7 @@ namespace BankPortalMVC.Controllers
             return RedirectToAction("AccountStatus", cid);
             /*int acid = cid.id;
             //var ac = new List<AccountMsg>();
-            HttpResponseMessage response = client.GetAsync("https://localhost:44379/api/Account/getCustomerAccounts/" + acid).Result;
+            HttpResponseMessage response = client.GetAsync("http://20.193.128.123/api/Account/getCustomerAccounts/" + acid).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
@@ -69,7 +69,7 @@ namespace BankPortalMVC.Controllers
         {
             //List<AccountMsg> abc = ac;
             int acid = cid.id;
-            HttpResponseMessage response = client.GetAsync("https://localhost:44379/api/Account/getCustomerAccounts/" + acid).Result;
+            HttpResponseMessage response = client.GetAsync("http://20.193.128.123/api/Account/getCustomerAccounts/" + acid).Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
@@ -80,7 +80,7 @@ namespace BankPortalMVC.Controllers
         }
         public IActionResult CurrentAccountChecking()
         {
-            HttpResponseMessage response = client.GetAsync("https://localhost:44356/api/Rules/deductServiceChargeCurrent").Result;
+            HttpResponseMessage response = client.GetAsync("https://bankrule1997.azurewebsites.net/api/Rules/deductServiceChargeCurrent").Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
@@ -91,7 +91,7 @@ namespace BankPortalMVC.Controllers
         }
         public IActionResult SavingsAccountChecking()
         {
-            HttpResponseMessage response = client.GetAsync("https://localhost:44356/api/Rules/deductServiceChargeSavings").Result;
+            HttpResponseMessage response = client.GetAsync("https://bankrule1997.azurewebsites.net/api/Rules/deductServiceChargeSavings").Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
